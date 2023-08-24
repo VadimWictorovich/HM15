@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Create New AccVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="CreateNewAccVC" customModule="HW15" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,6 +202,21 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="6EC-F6-Bzm" secondAttribute="bottom" id="xWi-Bh-BTk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confPassTF" destination="mZi-qk-Tsn" id="fDH-ZA-XMb"/>
+                        <outlet property="continueButton" destination="s2g-6y-8sR" id="3iQ-RP-Xuw"/>
+                        <outlet property="emailTF" destination="4o0-7R-raT" id="tn3-RA-cwo"/>
+                        <outlet property="errorConfPassLabel" destination="ZGJ-Au-ZLV" id="Egk-FD-xBS"/>
+                        <outlet property="errorEmailLabel" destination="4yx-71-9Rb" id="WZ9-A5-U9y"/>
+                        <outlet property="errorPassLabel" destination="Lbr-nt-N6i" id="AUp-ao-Z89"/>
+                        <outlet property="nameTF" destination="TQI-Lf-DWU" id="wP7-Hz-wfg"/>
+                        <outlet property="passwordTF" destination="XbL-Mv-adw" id="eZv-P8-jvD"/>
+                        <outlet property="scrollView" destination="6EC-F6-Bzm" id="qpG-OW-nCe"/>
+                        <outletCollection property="strongPassIndicatorsViews" destination="LA1-x2-Igc" collectionClass="NSMutableArray" id="r3w-vf-HiW"/>
+                        <outletCollection property="strongPassIndicatorsViews" destination="ngm-iT-shM" collectionClass="NSMutableArray" id="dSr-aX-26t"/>
+                        <outletCollection property="strongPassIndicatorsViews" destination="D8S-E7-PVF" collectionClass="NSMutableArray" id="2t1-bS-iP0"/>
+                        <outletCollection property="strongPassIndicatorsViews" destination="vcA-nB-pkC" collectionClass="NSMutableArray" id="IQd-vk-V6f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
