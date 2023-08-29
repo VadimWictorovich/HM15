@@ -8,15 +8,15 @@
 import UIKit
 
 final class SignInVC: UIViewController {
-    
-    @IBOutlet private weak var emailTF: UITextField!
-    @IBOutlet private weak var passTF: UITextField!
-    @IBOutlet private weak var errorLabel: UILabel!
-    @IBOutlet private weak var signInButton: UIButton!
+    @IBOutlet private var emailTF: UITextField!
+    @IBOutlet private var passTF: UITextField!
+    @IBOutlet private var errorLabel: UILabel!
+    @IBOutlet private var signInButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        hideKeyboardWhenTappedAround()
     }
 
     private func setupUI() {
