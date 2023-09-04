@@ -18,6 +18,8 @@ final class WelcomeVC: UIViewController {
     }
     
     @IBAction private func continueAction() {
+        guard let userModel = userModel else { return }
+        UserDefaultsService.saveUserModel(userModel: userModel)
         navigationController?.popToRootViewController(animated: true)
     }
     
