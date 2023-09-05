@@ -115,7 +115,7 @@ final class CreateNewAccVC: UIViewController {
         errorEmailLabel.isHidden = true
         errorPassLabel.isHidden = true
         errorConfPassLabel.isHidden = true
-        continueButton.isEnabled = true
+        continueButton.isEnabled = false
         strongPassIndicatorsViews.forEach { view in view.alpha = 0.2 }
     }
     

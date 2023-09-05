@@ -17,10 +17,37 @@ final class SignInVC: UIViewController {
         super.viewDidLoad()
         setupUI()
         hideKeyboardWhenTappedAround()
+        if let _ = UserDefaultsService.setUserModel() { goToTBC() }
     }
 
-    private func setupUI() {
-        signInButton.isEnabled = false
+    override func viewWillDisappear(_ animated: Bool) {
+        emailTF.text = ""
+        passTF.text = ""
+    }
+    
+    @IBAction private func signInAction() {
         errorLabel.isHidden = true
+        guard
+            let email = emailTF.text,
+            let pass = passTF.text,
+            let userModel = UserDefaultsService.setUserModel(),
+            email == userModel.email,
+            pass == userModel.pass
+        else {
+            errorLabel.isHidden = false
+            return
+        }
+        goToTBC()
+    }
+    
+    private func setupUI() {
+        //signInButton.isEnabled = false
+        errorLabel.isHidden = true
+    }
+    
+    private func goToTBC() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController else { return }
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

@@ -18,6 +18,11 @@
 		6C28D4FA2A9D4285009A9190 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C28D4F92A9D4285009A9190 /* UserModel.swift */; };
 		6C28D4FC2A9D453F009A9190 /* VerificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C28D4FB2A9D453E009A9190 /* VerificationsVC.swift */; };
 		6C28D4FE2A9DC714009A9190 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C28D4FD2A9DC714009A9190 /* WelcomeVC.swift */; };
+		6C28D5002A9FAD08009A9190 /* UserDefaultsExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C28D4FF2A9FAD08009A9190 /* UserDefaultsExt.swift */; };
+		6C28D5022A9FAF4B009A9190 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C28D5012A9FAF4B009A9190 /* UserDefaultsService.swift */; };
+		6C28D5042A9FB869009A9190 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C28D5032A9FB869009A9190 /* TabBarController.swift */; };
+		6C28D5062A9FCAB3009A9190 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C28D5052A9FCAB3009A9190 /* ProfileVC.swift */; };
+		6C28D5082A9FCF21009A9190 /* ChangeUserAccVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C28D5072A9FCF21009A9190 /* ChangeUserAccVC.swift */; };
 		6C3B5F512A9701900087DB28 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3B5F502A9701900087DB28 /* SignInVC.swift */; };
 		6C3B5F542A9703210087DB28 /* ExtensionUIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3B5F532A9703210087DB28 /* ExtensionUIVC.swift */; };
 		6C3B5F562A9703E50087DB28 /* CreateNewAccVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3B5F552A9703E50087DB28 /* CreateNewAccVC.swift */; };
@@ -37,6 +42,11 @@
 		6C28D4F92A9D4285009A9190 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		6C28D4FB2A9D453E009A9190 /* VerificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationsVC.swift; sourceTree = "<group>"; };
 		6C28D4FD2A9DC714009A9190 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		6C28D4FF2A9FAD08009A9190 /* UserDefaultsExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExt.swift; sourceTree = "<group>"; };
+		6C28D5012A9FAF4B009A9190 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		6C28D5032A9FB869009A9190 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		6C28D5052A9FCAB3009A9190 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		6C28D5072A9FCF21009A9190 /* ChangeUserAccVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserAccVC.swift; sourceTree = "<group>"; };
 		6C3B5F502A9701900087DB28 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		6C3B5F532A9703210087DB28 /* ExtensionUIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIVC.swift; sourceTree = "<group>"; };
 		6C3B5F552A9703E50087DB28 /* CreateNewAccVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewAccVC.swift; sourceTree = "<group>"; };
@@ -100,6 +110,9 @@
 				6C3B5F552A9703E50087DB28 /* CreateNewAccVC.swift */,
 				6C28D4FB2A9D453E009A9190 /* VerificationsVC.swift */,
 				6C28D4FD2A9DC714009A9190 /* WelcomeVC.swift */,
+				6C28D5032A9FB869009A9190 /* TabBarController.swift */,
+				6C28D5052A9FCAB3009A9190 /* ProfileVC.swift */,
+				6C28D5072A9FCF21009A9190 /* ChangeUserAccVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -119,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				6C28D4F62A9D175F009A9190 /* VerificationService.swift */,
+				6C28D5012A9FAF4B009A9190 /* UserDefaultsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -135,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				6C3B5F532A9703210087DB28 /* ExtensionUIVC.swift */,
+				6C28D4FF2A9FAD08009A9190 /* UserDefaultsExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -213,14 +228,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C194A7A2A967EE700495633 /* AppDelegate.swift in Sources */,
+				6C28D5022A9FAF4B009A9190 /* UserDefaultsService.swift in Sources */,
 				6C28D4FA2A9D4285009A9190 /* UserModel.swift in Sources */,
 				6C194A7C2A967EE700495633 /* SceneDelegate.swift in Sources */,
 				6C28D4F72A9D175F009A9190 /* VerificationService.swift in Sources */,
 				6C3B5F542A9703210087DB28 /* ExtensionUIVC.swift in Sources */,
 				6C3B5F562A9703E50087DB28 /* CreateNewAccVC.swift in Sources */,
 				6C28D4FE2A9DC714009A9190 /* WelcomeVC.swift in Sources */,
+				6C28D5062A9FCAB3009A9190 /* ProfileVC.swift in Sources */,
 				6C3B5F512A9701900087DB28 /* SignInVC.swift in Sources */,
+				6C28D5042A9FB869009A9190 /* TabBarController.swift in Sources */,
+				6C28D5002A9FAD08009A9190 /* UserDefaultsExt.swift in Sources */,
 				6C28D4FC2A9D453F009A9190 /* VerificationsVC.swift in Sources */,
+				6C28D5082A9FCF21009A9190 /* ChangeUserAccVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
